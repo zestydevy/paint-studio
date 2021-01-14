@@ -1,3 +1,7 @@
+# base rom
+*.z64
+*.n64
+
 # Prerequisites
 *.d
 

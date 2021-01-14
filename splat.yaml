@@ -1,0 +1,24 @@
+name: Mario Artist Paint Studio
+crc1: E2EA8C91
+crc2: 43582578
+basename: paintstudio
+options:
+  find-file-boundaries: True
+  compiler: IDO
+  mnemonic_ljust: 11
+
+segments:
+  - [0x000000, bin, header]
+  - [0x000040, bin, boot]
+  - name: app
+    type: code
+    start: 0x10E8
+    vram: 0x80000400
+    files:
+    - [0x10E8, asm]
+    - [0x2048, asm, bootproc]
+    - [0x129F0, bin]
+    - [0x159F8, asm]
+    - [0x31148, bin]
+    - [0x796B0, asm]
+  - [0xDB27C]
